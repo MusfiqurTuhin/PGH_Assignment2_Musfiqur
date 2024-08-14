@@ -394,6 +394,68 @@ body {
   .form-btn-submit{
     padding: 1.6rem 6rem;
   }  
+  
+.team-content{
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .team-content h2{
+    font-size: 4rem;
+  }
+  .team-content p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    margin-top: 1.4rem;
+  }
+   .team-trainers{
+    background-color: var(--color-white-semi-transparent);
+    border-radius: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-trainers-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2.5rem;
+   }
+  .trainers {
+      position: relative;
+      width: 100%;
+      height: 27rem;
+  }
+  .trainers img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.8rem;
+  }
+  .trainers::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 1.8rem;
+  }
+  .trainers-content{
+    position: absolute;
+    text-align: left;
+    left: 2rem;
+    bottom: 2rem;
+   }
+   .trainers-content h3{
+    font-size: 2rem;
+   }
+   .trainers-content p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+   }
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -544,4 +606,11 @@ body {
         grid-template-columns: 49% 49%;
         gap: 1rem;
     }
+    .team-section{
+        margin: 6.5rem 2rem 0 2rem;
+    }
+    .team-trainers-inner{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+       }
 }
