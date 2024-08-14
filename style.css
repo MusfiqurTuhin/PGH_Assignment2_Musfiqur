@@ -456,6 +456,8 @@ body {
     font-weight: 300;
     letter-spacing: .1rem;
    }
+          /* Unique Section  */
+
    .inspiration-section {
     max-width: 1440px;
     margin: auto;
@@ -629,18 +631,19 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
        }
+       /* Unique Section Responsive */
     .inspiration-section {
         width: 100%;
-        padding: 10px; /* Adjusted padding for small screens */
+        padding: 10px; 
     }
 
     .inspiration-title {
-        font-size: 1.5em; /* Slightly larger font size for better visibility */
+        font-size: 1.5em; 
         margin-bottom: 15px;
     }
 
     .inspiration-description {
-        font-size: 1em; /* Adjusted font size */
+        font-size: 1em; 
         margin-bottom: 20px;
     }
 
