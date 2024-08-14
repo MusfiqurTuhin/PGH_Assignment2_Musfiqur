@@ -456,6 +456,22 @@ body {
     font-weight: 300;
     letter-spacing: .1rem;
    }
+   .inspiration-section {
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    padding: 20px; 
+}
+
+.inspiration-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.inspiration-description {
+    margin-bottom: 30px;
+}
+
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -613,4 +629,23 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
        }
+    .inspiration-section {
+        width: 100%;
+        padding: 10px; /* Adjusted padding for small screens */
+    }
+
+    .inspiration-title {
+        font-size: 1.5em; /* Slightly larger font size for better visibility */
+        margin-bottom: 15px;
+    }
+
+    .inspiration-description {
+        font-size: 1em; /* Adjusted font size */
+        margin-bottom: 20px;
+    }
+
+    .inspiration-section iframe {
+        width: 100%;
+        height: auto;
+    }
 }
