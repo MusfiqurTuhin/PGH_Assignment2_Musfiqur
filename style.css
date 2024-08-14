@@ -271,6 +271,36 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 4rem;
   }
+  .card-container {
+    background-color: var(--color-bg);
+    padding: 4rem;
+    border-radius: 1.8rem;
+  }
+  .card-content {
+    width: 65%;
+  }
+  .card-content h2 {
+    font-size: 5rem;
+  }
+  .card-content p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin: 1.4rem 18rem 3.5rem 0;
+  }
+  .card-image {
+    width: 36rem;
+    height: 32rem;
+    overflow: hidden;
+    border-radius: 1.8rem;
+  }
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(2.5) translate(-62px, 12%);
+  }
+  
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -364,4 +394,33 @@ body {
     .habit-item p{
         margin: .6rem 8rem;
     }
+    .card-section{
+        margin-top: 7rem;
+    }
+    .card-container{
+        flex-direction: column;
+        margin: 2rem;
+        padding: 3rem;
+    }
+    .card-content, 
+    .card-image{
+        width: 100%;
+    }
+    .card-content h2{
+        font-size: 3rem;
+    }
+    .card-content p{
+        margin: 2rem 2rem 2em 0;
+    }
+    .card-btn{
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+    .card-image{
+        width: 100%;
+        height: 100%;
+    }
+    .card-image img {
+        transform: scale(1.5) translate(-30px, 15%);
+      }
 }
