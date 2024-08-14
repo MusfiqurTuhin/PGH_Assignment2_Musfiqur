@@ -90,13 +90,11 @@ body {
     --max-w: 106rem;
   }
   
-  /* main elements */
   * {
     margin: 0;
     padding: 0;
   }
   html {
-    /* 62.5% of 16px = 10px */
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
@@ -119,7 +117,6 @@ body {
     text-decoration: none;
     color: var(--color-white);
   }
-  /* shared and common css */
   .max__w {
     max-width: var(--max-w);
     margin: 0 auto;
@@ -298,7 +295,6 @@ body {
         margin-right: 8rem;
     }
     .btn{
-        /* padding: 1.6rem 3rem; */
         padding: 0;
         width: 16rem;
         height: 5.5rem;
