@@ -111,5 +111,92 @@
           </div>
         </div>
       </section>
+      <section class="bmi-section m__section">
+        <div class="bmi-header-section text__center">
+          <h2>BMI Calculator</h2>
+          <p>
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+        <div class="bmi-calculator-form-container m__top8">
+          <div class="bmi-calculator-form max__w display__flex">
+            <div class="bmi-calculator">
+              <h3>BMI Calculator Chart</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Below 18.5</td>
+                    <td>Underweight</td>
+                  </tr>
+                  <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Healthy</td>
+                  </tr>
+                  <tr>
+                    <td>25.0 - 29.9</td>
+                    <td>Overweight</td>
+                  </tr>
+                  <tr>
+                    <td>30.0 - and Above</td>
+                    <td>Obese</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="calculator-form">
+              <h3>Calculate your BMI</h3>
+              <p>
+                We believe fitness should be accessible to everyone, everywhere,
+                regardless of income or access to a gym.
+              </p>
+              <form class="bmi-form" action="">
+                <div class="form-grid display__flex m__top4">
+                  <input
+                    type="text"
+                    name="height"
+                    id="height"
+                    placeholder="Height/cm"
+                  />
+                  <input
+                    type="text"
+                    name="weight"
+                    id="weight"
+                    placeholder="Weight/kg"
+                  />
+                  <input type="text" name="age" id="age" placeholder="Age" />
+                  <select name="sex" id="sex">
+                    <option value="" disabled selected hidden>Sex</option>
+                    <option class="option" value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="form-column">
+                  <select name="activity" id="activity">
+                    <option class="option" value="" disabled selected hidden>
+                      Select an activity factor
+                    </option>
+                    <option value="Sedentary">Sedentary</option>
+                    <option value="lightly-active">Lightly active</option>
+                    <option value="lightly-active">Moderately active</option>
+                    <option value="lightly-active">Very active</option>
+                  </select>
+                  <input
+                    class="btn btn__primary form-btn-submit m__top3"
+                    type="submit"
+                    value="Calculate"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>

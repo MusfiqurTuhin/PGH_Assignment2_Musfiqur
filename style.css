@@ -300,7 +300,100 @@ body {
     object-fit: cover;
     transform: scale(2.5) translate(-62px, 12%);
   }
+
+  .bmi-header-section {
+    max-width: 70rem;
+    margin: 0 auto;
+  }
+  .bmi-header-section h2 {
+    font-size: 4rem;
+  }
+  .bmi-header-section p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+  .bmi-calculator-form-container {
+    background-color: var(--color-bg);
+  }
+  .bmi-calculator-form {
+    padding: 5rem 0;
+  }
+  .bmi-calculator {
+    width: 35%;
+  }
+  .bmi-calculator h3 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
   
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    text-align: left;
+    border: 1px solid var(--color-white-semi-transparent);
+    padding: 1.5rem;
+  }
+  th {
+    color: var(--color-white);
+    font-size: 1.8rem;
+  }
+  td {
+    font-size: 1.4rem;
+  }
+  .calculator-form {
+    margin-left: 17rem;
+    width: 65%;
+  }
+  .calculator-form h3 {
+    font-size: 3rem;
+  }
+  .calculator-form p {
+    font-size: 1.4rem;
+    margin-top: 1.4rem;
+  }
+  .form-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  input[type="text"],
+  select{
+    border: none;
+    border-radius: .8rem;
+    background-color: var(--color-bg-secondary);
+  }
+  select,
+  input::placeholder{
+    color: var(--color-text);
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+  }
+  
+  input:focus,
+  select:focus{
+    outline: none;
+  }
+  #height,
+  #weight,
+  #sex,
+  #age,
+  #activity{
+    padding: 1.5rem;
+  }
+  #activity{
+    width: 100%;
+    margin-top: 1.2rem;
+  }
+  .form-btn-submit{
+    padding: 1.6rem 6rem;
+  }  
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -423,4 +516,32 @@ body {
     .card-image img {
         transform: scale(1.5) translate(-30px, 15%);
       }
+      .bmi-header-section{
+        margin: 2rem;
+    }
+    .bmi-calculator-form-container {
+        margin-top: 4rem;
+      }
+    .bmi-calculator{
+          width: 100%;
+    }
+    .bmi-calculator-form{
+        flex-direction: column;
+    }
+    .bmi-calculator-form{
+        margin: 2rem;
+    }
+    .calculator-form{
+        margin: 5rem 0 0 0;
+        width: 100%;
+    }
+    .bmi-calculator h3,
+    .calculator-form h3{
+        font-size: 2.5rem;
+    }
+    .form-grid{
+        width: 100%;
+        grid-template-columns: 49% 49%;
+        gap: 1rem;
+    }
 }
