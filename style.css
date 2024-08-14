@@ -244,6 +244,33 @@ body {
     bottom: 8rem;
     left: 0;
   }
+  .habit-content h2 {
+    font-size: 4.5rem;
+  }
+  .habit-content p {
+    margin: 1rem 22rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+  .habit-item img {
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    padding: 0.5rem;
+  }
+  .habit-item h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .habit-item p {
+    margin-top: 0.6rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+  .habit-lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+  }
 @media (max-width: 576px) {
     .navbar {
         flex-direction: row;
@@ -319,5 +346,22 @@ body {
     }
     .card-1 p{
         font-size: 1rem;
+    }
+    .habit-section{
+        margin-top: 4rem;
+    }
+    .habit-content h2{
+        font-size: 3rem;
+    }
+    .habit-content p{
+        margin: 1rem 4rem;
+    }
+    .habit-lists{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+    .habit-item p{
+        margin: .6rem 8rem;
     }
 }
